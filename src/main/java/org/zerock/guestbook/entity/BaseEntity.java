@@ -18,7 +18,7 @@ abstract class BaseEntity {
     @Column(name = "regdate", updatable = false)
     private LocalDateTime regDate;
 
-    @LastModifiedDate
+    @LastModifiedDate //최종 수정 시간을 자동으로 처리하는 용도
     @Column(name = "moddate")
     private LocalDateTime modDate;
 }
